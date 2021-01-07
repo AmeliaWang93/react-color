@@ -7,7 +7,7 @@ import { ColorWrap, Saturation, Hue } from '../common'
 import PhotoshopFields from './PhotoshopFields'
 import PhotoshopPointerCircle from './PhotoshopPointerCircle'
 import PhotoshopPointer from './PhotoshopPointer'
-import PhotoshopButton from './PhotoshopButton'
+// import PhotoshopButton from './PhotoshopButton'
 import PhotoshopPreviews from './PhotoshopPreviews'
 
 export class Photoshop extends React.Component {
@@ -20,29 +20,30 @@ export class Photoshop extends React.Component {
   }
 
   render() {
-    const { 
+    const {
       styles: passedStyles = {},
       className = '',
     } = this.props
     const styles = reactCSS(merge({
       'default': {
         picker: {
-          background: '#DCDCDC',
+          background: '#1c1f24',
           borderRadius: '4px',
-          boxShadow: '0 0 0 1px rgba(0,0,0,.25), 0 8px 16px rgba(0,0,0,.15)',
+          color:"#c3c3c3",
+          // boxShadow: '0 0 0 1px rgba(0,0,0,.25), 0 8px 16px rgba(0,0,0,.15)',
           boxSizing: 'initial',
-          width: '513px',
+          width: '513px'
         },
         head: {
-          backgroundImage: 'linear-gradient(-180deg, #F0F0F0 0%, #D4D4D4 100%)',
-          borderBottom: '1px solid #B1B1B1',
-          boxShadow: 'inset 0 1px 0 0 rgba(255,255,255,.2), inset 0 -1px 0 0 rgba(0,0,0,.02)',
+          background: '#1d2026',
+          borderBottom: '1px solid #36383e',
+          // boxShadow: 'inset 0 1px 0 0 rgba(255,255,255,.2), inset 0 -1px 0 0 rgba(0,0,0,.02)',
           height: '23px',
           lineHeight: '24px',
           borderRadius: '4px 4px 0 0',
           fontSize: '13px',
-          color: '#4D4D4D',
-          textAlign: 'center',
+          color: '#c3c3c3',
+          textAlign: 'center'
         },
         body: {
           padding: '15px 15px 0',
@@ -54,7 +55,7 @@ export class Photoshop extends React.Component {
           position: 'relative',
           border: '2px solid #B3B3B3',
           borderBottom: '2px solid #F0F0F0',
-          overflow: 'hidden',
+          overflow: 'hidden'
         },
         hue: {
           position: 'relative',
@@ -62,11 +63,11 @@ export class Photoshop extends React.Component {
           width: '19px',
           marginLeft: '10px',
           border: '2px solid #B3B3B3',
-          borderBottom: '2px solid #F0F0F0',
+          borderBottom: '2px solid #F0F0F0'
         },
         controls: {
           width: '180px',
-          marginLeft: '10px',
+          marginLeft: '10px'
         },
         top: {
           display: 'flex',
@@ -111,8 +112,8 @@ export class Photoshop extends React.Component {
                 />
               </div>
               <div style={ styles.actions }>
-                <PhotoshopButton label="OK" onClick={ this.props.onAccept } active />
-                <PhotoshopButton label="Cancel" onClick={ this.props.onCancel } />
+                {/*<PhotoshopButton label="OK" onClick={ this.props.onAccept } active />*/}
+                {/*<PhotoshopButton label="Cancel" onClick={ this.props.onCancel } />*/}
                 <PhotoshopFields
                   onChange={ this.props.onChange }
                   rgb={ this.props.rgb }

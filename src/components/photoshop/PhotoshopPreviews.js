@@ -8,7 +8,7 @@ export const PhotoshopPreviews = ({ rgb, currentColor }) => {
         border: '1px solid #B3B3B3',
         borderBottom: '1px solid #F0F0F0',
         marginBottom: '2px',
-        marginTop: '1px',
+        marginTop: '1px'
       },
       new: {
         height: '34px',
@@ -22,7 +22,7 @@ export const PhotoshopPreviews = ({ rgb, currentColor }) => {
       },
       label: {
         fontSize: '14px',
-        color: '#000',
+        color: '#c3c3c3',
         textAlign: 'center',
       },
     },
